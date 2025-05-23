@@ -9,14 +9,11 @@ Un poco de informacion de las ultimas noticias bomba
 Una experiencia inmersiva dedicada al "mejor fútbol del mundo"
 
 ## Explicación del layout y estructura
-1. Header Sticky
+1. Header
 
-Logo circular de la Premier League (60x60px) con fondo blanco y sombra
-Título "PREMIER LEAGUE" en Montserrat 800, mayúsculas con letter-spacing
+En el Header he puesto el logo de la Premier League, tambien he puesto el titulo en mayusuclas "PREMIER LEAGUE"
 Navegación horizontal con 5 enlaces: Inicio, Equipos, Clasificación, Noticias, Contacto
-Menú hamburguesa oculto para dispositivos móviles
 Fondo degradado de morado a morado oscuro
-Posicionamiento sticky para mantener visible durante scroll
 
 2. Sección Hero (70vh)
 
