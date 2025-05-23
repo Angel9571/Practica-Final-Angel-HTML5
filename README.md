@@ -9,8 +9,6 @@ Un poco de informacion de las ultimas noticias bomba
 Una experiencia inmersiva dedicada al "mejor fútbol del mundo"
 
 ## Explicación del layout y estructura
-Estructura General
-El sitio web implementa un diseño vertical de página única con las siguientes secciones:
 1. Header Sticky
 
 Logo circular de la Premier League (60x60px) con fondo blanco y sombra
