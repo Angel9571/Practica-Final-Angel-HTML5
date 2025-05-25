@@ -8,19 +8,27 @@ Top 3 de la clasificación actual con estadísticas detalladas de Liverpool, Ars
 Un poco de informacion de las ultimas noticias bomba 
 Una experiencia inmersiva dedicada al "mejor fútbol del mundo"
 
-## Explicación del layout y estructura
-1. Header
+## Contenido de la pagina
+1. Cabecera (Header)
 
-En el Header he puesto el logo de la Premier League, tambien he puesto el titulo en mayusuclas "PREMIER LEAGUE"
-Navegación horizontal con 5 enlaces: Inicio, Equipos, Clasificación, Noticias, Contacto
-Fondo degradado de morado a morado oscuro
+En la cabecera he puesto el logo de la Premier League, tambien he puesto el titulo en mayusuclas "PREMIER LEAGUE".
+Tambien he puesto una navegacion con 5 elnlaces(Inicio, Equipo, Clacificaion, Noticias,Contactos)
 
-2. Sección Hero (70vh)
+2. Seccion Principal (Hero Section)
 
-Imagen de fondo con placeholder de 1600x900px
-Overlay degradado semitransparente para legibilidad
-Contenido centrado con:
+En la seccion prinicpal he puesto el titulo en maysuculas que es "LA MEJOR LIGA DEL MUNDO", justo abajo del titulo he puesto una brebe desscripicon sobre la pacion de la premier League.
 
-Título principal: "La mejor liga del mundo"
-Descripción explicativa sobre la Premier League
-Botón CTA: "Ver resultados" con estilo redondeado
+Luego puse los top 3 de la clasificacion, hay se muestran los 3 equipos lideres con informacion completa.
+
+
+Mas abajo puse una seccion de ultimas noticias, solo se precentan 3 noticias.
+
+
+3. Pie de pagina (Footer)
+
+En el pie de pagina puse 3 secciones la primera es donde esta el logo, una descricion de la Premier League y las redes sociales de la Premier League. En la seagunda estan los enlaces rapidos (Inicio, Equipos, Clasificacion, Calendario, Estadisticas). Y por ultimo en la ultima seccion he puesto las competiciones mas famosas que se juegan en la premier league (Premier League, FA Cup, Carabao Cup, Community Shield, Champions League)
+
+## Estrucutra Visual y Layout
+
+ 
+
