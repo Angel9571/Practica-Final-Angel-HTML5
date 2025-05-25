@@ -30,5 +30,9 @@ En el pie de pagina puse 3 secciones la primera es donde esta el logo, una descr
 
 ## Estrucutra Visual y Layout
 
- 
+En la esturcutra visual en Desktop sale las 3 columnas para equipos y noticias, en tablests salen 2 columnas adaptativas, y en mobiles solo sale 1 columna con menu hamburguesa
 
+### Sistema de Colores
+
+En colores el color principal que escoji fue el purpura por que es el color oficial de la Premier League.\
+Tambien escoji el verde por que pegaba bien con el purpura
