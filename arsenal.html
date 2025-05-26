@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal FC - Historia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+        
+        :root {
+            --primary: #3d195b;
+            --secondary: #00ff85;
+            --accent: #e90052;
+            --dark: #2a0a3a;
+            --light: #ffffff;
+            --gray: #f8f8f8;
+            --text-dark: #333333;
+            --text-light: #777777;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --border-radius: 10px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: var(--light);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            background-color: var(--light);
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .navbar {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: var(--light);
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(61, 25, 91, 0.8), rgba(0, 0, 0, 0.6)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ef0107" width="600" height="800"/><rect fill="%23ffffff" x="600" width="600" height="800"/></svg>') center/cover no-repeat;
+            position: relative;
+            color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-btn:hover {
+            background-color: var(--light);
+            transform: translateY(-5px);
+        }
+        
+        .historia {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.2rem;
+        }
+        
+        .history-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .history-block {
+            background-color: var(--gray);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--accent);
+        }
+        
+        .history-year {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .history-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .history-text {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .palmares {
+            padding: 5rem 0;
+            background-color: var(--gray);
+        }
+        
+        .trophies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .trophy-card {
+            background-color: var(--light);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .trophy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .trophy-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .trophy-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: var(--light);
+            padding: 4rem 0 1rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo img {
+            width: 50px;
+            height: 50px;
+            background-color: var(--light);
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        .footer-logo-text {
+            font-weight: 800;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        
+        .footer-about p {
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .history-block {
+                padding: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .trophies-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-img">
+                    <img src="images/Arsenal-Logo.png" alt="Arsenal logo">
+                </div>
+                <div class="logo-text">Arsenal FC</div>
+            </div>
+            
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Equipos</a></li>
+                    <li><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Arsenal FC</h1>
+            <p>La historia de los Gunners del norte de Londres</p>
+            <a href="#historia" class="hero-btn">Ver Historia</a>
+        </div>
+    </section>
+    
+    <section class="historia" id="historia">
+        <div class="container">
+            <div class="section-title">
+                <h2>Historia del Club</h2>
+                <p>Desde sus inicios hasta la actualidad</p>
+            </div>
+            
+            <div class="history-content">
+                <div class="history-block">
+                    <div class="history-year">1886</div>
+                    <h3 class="history-title">Los Inicios</h3>
+                    <p class="history-text">El Arsenal FC fue fundado en 1886 como Dial Square por un grupo de trabajadores de la Royal Arsenal en Woolwich. En 1891 se convirtió en el primer club del sur de Inglaterra en volverse profesional y adoptó el nombre de Woolwich Arsenal.</p>
+                </div>
+                
+                <div class="history-block">
+                    <div class="history-year">1913</div>
+                    <h3 class="history-title">Mudanza a Highbury</h3>
+                    <p class="history-text">El club se mudó al norte de Londres, estableciéndose en Highbury y cambiando su nombre a Arsenal FC. Esta mudanza marcó el comienzo de una nueva era para el club, que pronto se convertiría en una potencia del fútbol inglés.</p>
+                </div>
+                
+                <div class="history-block">
+                    <div class="history-year">1930s</div>
+                    <h3 class="history-title">La Era de Chapman</h3>
+                    <p class="history-text">Bajo la dirección de Herbert Chapman, el Arsenal dominó el fútbol inglés en los años 30, ganando cinco títulos de liga en ocho años. Chapman revolucionó las tácticas y convirtió al Arsenal en el equipo más exitoso de la época.</p>
+                </div>
+                
+                <div class="history-block">
+                    <div class="history-year">1998-2018</div>
+                    <h3 class="history-title">La Era Wenger</h3>
+                    <p class="history-text">Arsène Wenger transformó el Arsenal con su filosofía de juego atractivo. El punto culminante fue la temporada 2003-04, cuando los "Invincibles" completaron una temporada de Premier League sin perder un solo partido, hazaña nunca repetida.</p>
+                </div>
+                
+                <div class="history-block">
+                    <div class="history-year">2006</div>
+                    <h3 class="history-title">Emirates Stadium</h3>
+                    <p class="history-text">El Arsenal se mudó de Highbury al nuevo Emirates Stadium, un moderno estadio de 60,000 asientos. Aunque la mudanza supuso desafíos financieros, representó un paso importante hacia el futuro del club.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Trofeos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trofeos</h2>
+                <p>Los títulos más importantes del club</p>
+            </div>
+            
+            <div class="trophies-container">
+                <div class="trophy-card">
+                    <div class="trophy-number">13</div>
+                    <div class="trophy-name">Títulos de Liga</div>
+                </div>
+                
+                <div class="trophy-card">
+                    <div class="trophy-number">14</div>
+                    <div class="trophy-name">FA Cup</div>
+                </div>
+                
+                <div class="trophy-card">
+                    <div class="trophy-number">2</div>
+                    <div class="trophy-name">Copa de la Liga</div>
+                </div>
+                
+                <div class="trophy-card">
+                    <div class="trophy-number">1</div>
+                    <div class="trophy-name">Recopa de Europa</div>
+                </div>
+                
+                <div class="trophy-card">
+                    <div class="trophy-number">17</div>
+                    <div class="trophy-name">Community Shield</div>
+                </div>
+                
+                <div class="trophy-card">
+                    <div class="trophy-number">1</div>
+                    <div class="trophy-name">Temporada Invicta</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="images/Arsenal-Logo.png" alt="Arsenal Logo">
+                    <div class="footer-logo-text">Arsenal FC</div>
+                </div>
+                <p>El Arsenal Football Club es uno de los clubes más históricos e influyentes del fútbol inglés, conocido por su estilo de juego atractivo y su rica tradición.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
