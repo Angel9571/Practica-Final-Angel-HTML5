@@ -142,7 +142,7 @@
      
         .hero {
             height: 70vh;
-             background: url('/api/placeholder/500/300') center/cover no-repeat;
+             background: url("images/p-league.png") center/cover no-repeat;
             position: relative;
             color: var(--light);
             display: flex;
@@ -324,8 +324,29 @@
             color: var(--text-light);
             text-transform: uppercase;
         }
+
         
-        /* Latest News */
+        .team-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--light);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+            transition: var(--transition);
+            box-shadow: 0 3px 10px rgba(233, 0, 82, 0.3);
+        }
+        
+        .team-btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(233, 0, 82, 0.4);
+        }
+        
+        
         .latest-news {
             padding: 5rem 0;
             background-color: var(--gray);
@@ -600,9 +621,7 @@
                 <ul class="navbar" id="navbar">
                     <li><a href="#" class="nav-link">Inicio</a></li>
                     <li><a href="#" class="nav-link">Equipos</a></li>
-                    <li><a href="#" class="nav-link">Clasificación</a></li>
-                    <li><a href="#" class="nav-link">Noticias</a></li>
-                    <li><a href="#" class="nav-link">Contacto</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
@@ -632,7 +651,7 @@
         
                 <div class="team-card">
                     <div class="team-position">1</div>
-                    <div class="team-image" style="background-image: url('/api/placeholder/500/300')"></div>
+                     <div class="team-image"  img src="/images/Liverpool.jpg"  ></div>
                     <div class="team-logo">
                         <img src="images/Liverpool_FC.svg.png" alt="Liverpool Logo">
                     </div>
@@ -676,6 +695,9 @@
                                 <div class="stat-label">PTS</div>
                             </div>
                         </div>
+                        
+                       
+                        <a href="liverpool.html" class="team-btn">Ver equipo</a>
                     </div>
                 </div>
                 
@@ -726,9 +748,11 @@
                                 <div class="stat-label">PTS</div>
                             </div>
                         </div>
+                        
+                       
+                        <a href="arsenal.html" class="team-btn">Ver equipo</a>
                     </div>
                 </div>
-                
            
                 <div class="team-card">
                     <div class="team-position">3</div>
@@ -776,6 +800,9 @@
                                 <div class="stat-label">PTS</div>
                             </div>
                         </div>
+                        
+                        
+                        <a href="man-city.html" class="team-btn">Ver equipo</a>
                     </div>
                 </div>
             </div>
@@ -797,7 +824,7 @@
                         <div class="news-date">27 de mayo, 2025</div>
                         <h3 class="news-title">El Liverpool lidera la tabla tras una victoria clave</h3>
                         <p class="news-excerpt">El club red ha confirmado la llegada de un nuevo talento que promete revolucionar la delantera para la próxima temporada.</p>
-                        <a href="#" class="read-more">Leer más</a>
+                        <a href="#" class="read-more"></a>
                     </div>
                 </div>
                 
@@ -807,7 +834,7 @@
                         <div class="news-date">21 de mayo, 2025</div>
                         <h3 class="news-title">¡El emotivo adios de Kevin De Bruyne en el Etihad Stadium!</h3>
                         <p class="news-excerpt">De Bruyne se va del City al final de esta temporada, lo que significa que el enfrentamiento de esta noche en la Premier League contra el Bournemouth fue su despedida ante los aficionados en casa.</p>
-                        <a href="#" class="read-more">Leer más</a>
+                        <a href="#" class="read-more"></a>
                     </div>
                 </div>
                 
@@ -817,7 +844,7 @@
                         <div class="news-date">19 de mayo, 2025</div>
                         <h3 class="news-title">Arteta abre las puertas del Arsenal a Rodrygo</h3>
                         <p class="news-excerpt">El Arsenal es uno de los equipos que podría estar interesado en Rodrygo. Desde Inglaterra ya han apuntado a varios clubes de la Premier como serios candidatos en caso de que el brasileño decida dar el paso, aunque el futbolista, al menos por ahora, ha desmentido en sus redes que se vaya a marchar.</p>
-                        <a href="#" class="read-more">Leer más</a>
+                        <a href="#" class="read-more"></a>
                     </div>
                 </div>
             </div>
@@ -839,28 +866,9 @@
                     <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            
             <div class="footer-links">
                 <h3 class="footer-heading">Enlaces Rápidos</h3>
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Equipos</a></li>
-                    <li><a href="#">Clasificación</a></li>
-                    <li><a href="#">Calendario</a></li>
-                    <li><a href="#">Estadísticas</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h3 class="footer-heading">Competiciones</h3>
-                <ul>
-                    <li><a href="#">Premier League</a></li>
-                    <li><a href="#">FA Cup</a></li>
-                    <li><a href="#">Carabao Cup</a></li>
-                    <li><a href="#">Community Shield</a></li>
-                    <li><a href="#">Champions League</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
+                
