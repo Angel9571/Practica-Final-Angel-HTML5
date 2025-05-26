@@ -12,9 +12,10 @@ Una experiencia inmersiva dedicada al "mejor fútbol del mundo"
 ### Cabecera (Header)
 
 En la cabecera he puesto el logo de la Premier League, tambien he puesto el titulo en mayusuclas "PREMIER LEAGUE".
-Tambien he puesto una navegacion con 5 elnlaces(Inicio, Equipo, Clacificaion, Noticias,Contactos)
+Tambien he puesto una navegacion con 3 enlaces(Inicio, Equipo, Contactos)
 
-![image](https://github.com/user-attachments/assets/8312b650-bde1-4045-8490-e964360df91b)
+![image](https://github.com/user-attachments/assets/48c45fc8-17e3-4a94-a290-f8f1c2c54e1a)
+
 
 
 ### Seccion Principal (Hero Section)
@@ -40,13 +41,9 @@ En el pie de pagina puse 3 secciones la primera es donde esta el logo, una descr
 
 ![image](https://github.com/user-attachments/assets/8d453b94-958b-4ff9-8890-a5f4b2ab9d56)
 
-En la seagunda estan los enlaces rapidos (Inicio, Equipos, Clasificacion, Calendario, Estadisticas).
+En la seagunda estan los enlaces rapidos (Inicio, Equipos).
 
-![image](https://github.com/user-attachments/assets/0cf8a208-dda3-4f91-9cfc-372f5f50bbd2)
-
-Y por ultimo en la ultima seccion he puesto las competiciones mas famosas que se juegan en la premier league (Premier League, FA Cup, Carabao Cup, Community Shield, Champions League)
-
-![image](https://github.com/user-attachments/assets/82413d25-44fa-42ad-b6f9-3523ea336f17)
+![image](https://github.com/user-attachments/assets/994181b6-368a-4c47-b758-084dfd7cf9e0)
 
 ## Estrucutra Visual y Layout
 
