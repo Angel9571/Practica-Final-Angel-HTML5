@@ -17,22 +17,21 @@ Tambien he puesto una navegacion con 3 enlaces(Inicio, Equipo, Contactos)
 ![image](https://github.com/user-attachments/assets/48c45fc8-17e3-4a94-a290-f8f1c2c54e1a)
 
 
-
 ### Seccion Principal (Hero Section)
 
 En la seccion prinicpal he puesto el titulo en maysuculas que es "LA MEJOR LIGA DEL MUNDO", justo abajo del titulo he puesto una brebe desscripicon sobre la pacion de la premier League.
 
-![image](https://github.com/user-attachments/assets/1fb79627-472f-4aa6-b561-290cf4eb8f7d)
+![image](https://github.com/user-attachments/assets/9d5e5684-7e35-49fc-aa1d-07b66e681dbc)
 
 
 Luego puse los top 3 de la clasificacion, hay se muestran los 3 equipos lideres con informacion completa.
 
-![image](https://github.com/user-attachments/assets/a546d1e7-fcc5-479e-bc0f-d152eb120a11)
+![image](https://github.com/user-attachments/assets/3072de42-5c9b-429a-952d-e921d7d20586)
 
 
 Mas abajo puse una seccion de ultimas noticias, solo se precentan 3 noticias.
 
-![image](https://github.com/user-attachments/assets/dd21d205-3def-4807-8178-b888a7356b7f)
+![image](https://github.com/user-attachments/assets/87853db5-aefd-41bd-b58a-e4880719b053)
 
 
 ### Pie de pagina (Footer)
