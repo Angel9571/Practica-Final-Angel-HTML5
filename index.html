@@ -9,7 +9,6 @@
      
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
         
-  
         :root {
             --primary: #3d195b;
             --secondary: #00ff85;
@@ -24,7 +23,6 @@
             --transition: all 0.3s ease;
         }
         
-   
         * {
             margin: 0;
             padding: 0;
@@ -57,7 +55,6 @@
             margin: 0 auto;
         }
         
- 
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
             color: var(--light);
@@ -67,20 +64,17 @@
             z-index: 100;
             box-shadow: var(--shadow);
         }
-        
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
         }
-        
         .logo-container {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
         .logo-img {
             width: 60px;
             height: 60px;
@@ -89,19 +83,16 @@
             padding: 5px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
-        
         .logo-text {
             font-weight: 800;
             font-size: 1.6rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
         .navbar {
             display: flex;
             gap: 2rem;
         }
-        
         .nav-link {
             color: var(--light);
             font-weight: 600;
@@ -110,11 +101,9 @@
             padding: 0.5rem 0;
             transition: var(--transition);
         }
-        
         .nav-link:hover {
             color: var(--secondary);
         }
-        
         .nav-link::after {
             content: '';
             position: absolute;
@@ -125,11 +114,9 @@
             background-color: var(--secondary);
             transition: var(--transition);
         }
-        
         .nav-link:hover::after {
             width: 100%;
         }
-        
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -138,8 +125,6 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
-     
         .hero {
             height: 70vh;
              background: url("images/p-league.png") center/cover no-repeat;
@@ -150,7 +135,6 @@
             justify-content: center;
             text-align: center;
         }
-        
         .hero::before {
             content: '';
             position: absolute;
@@ -160,14 +144,12 @@
             height: 100%;
             background: linear-gradient(0deg, rgba(61, 25, 91, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
         }
-        
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 800px;
             padding: 0 2rem;
         }
-        
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 800;
@@ -176,13 +158,11 @@
             letter-spacing: 2px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
-        
         .hero-btn {
             display: inline-block;
             background-color: var(--secondary);
@@ -194,24 +174,19 @@
             transition: var(--transition);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        
         .hero-btn:hover {
             background-color: var(--light);
             transform: translateY(-5px);
         }
-        
-   
         .top-teams {
             padding: 5rem 0;
             background-color: var(--light);
         }
-        
         .section-title {
             text-align: center;
             margin-bottom: 3rem;
             position: relative;
         }
-        
         .section-title h2 {
             font-size: 2.5rem;
             font-weight: 800;
@@ -219,18 +194,15 @@
             text-transform: uppercase;
             margin-bottom: 1rem;
         }
-        
         .section-title p {
             color: var(--text-light);
             font-size: 1.2rem;
         }
-        
         .teams-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
-        
         .team-card {
             background-color: var(--gray);
             border-radius: var(--border-radius);
@@ -239,12 +211,10 @@
             transition: var(--transition);
             position: relative;
         }
-        
         .team-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
         .team-position {
             position: absolute;
             top: 1rem;
@@ -261,13 +231,11 @@
             font-size: 1.2rem;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
-        
         .team-image {
             height: 200px;
             background: url('/api/placeholder/500/300') center/cover no-repeat;
             position: relative;
         }
-        
         .team-logo {
             position: absolute;
             bottom: -30px;
@@ -283,32 +251,27 @@
             justify-content: center;
             padding: 10px;
         }
-        
         .team-logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-        
         .team-info {
             padding: 2.5rem 1.5rem 1.5rem;
             text-align: center;
         }
-        
         .team-name {
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--primary);
         }
-        
         .team-stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
             margin-top: 1.5rem;
         }
-        
         .stat {
             text-align: center;
         }
